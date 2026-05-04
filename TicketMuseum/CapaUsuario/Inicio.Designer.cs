@@ -57,8 +57,9 @@
             pMenu.Controls.Add(pictureBox2);
             pMenu.Dock = DockStyle.Left;
             pMenu.Location = new Point(0, 0);
+            pMenu.Margin = new Padding(2);
             pMenu.Name = "pMenu";
-            pMenu.Size = new Size(264, 675);
+            pMenu.Size = new Size(185, 405);
             pMenu.TabIndex = 0;
             // 
             // btCerrarSesión
@@ -71,9 +72,10 @@
             btCerrarSesión.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btCerrarSesión.Image = Properties.Resources.cerrar_sesion;
             btCerrarSesión.ImageAlign = ContentAlignment.MiddleLeft;
-            btCerrarSesión.Location = new Point(0, 618);
+            btCerrarSesión.Location = new Point(0, 371);
+            btCerrarSesión.Margin = new Padding(2);
             btCerrarSesión.Name = "btCerrarSesión";
-            btCerrarSesión.Size = new Size(264, 57);
+            btCerrarSesión.Size = new Size(185, 34);
             btCerrarSesión.TabIndex = 2;
             btCerrarSesión.Text = "Cerrar Sesión";
             btCerrarSesión.UseVisualStyleBackColor = false;
@@ -90,9 +92,10 @@
             btAdministracion.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btAdministracion.Image = Properties.Resources.ADMINISTRACIÓN;
             btAdministracion.ImageAlign = ContentAlignment.MiddleLeft;
-            btAdministracion.Location = new Point(0, 210);
+            btAdministracion.Location = new Point(0, 127);
+            btAdministracion.Margin = new Padding(2);
             btAdministracion.Name = "btAdministracion";
-            btAdministracion.Size = new Size(264, 56);
+            btAdministracion.Size = new Size(185, 34);
             btAdministracion.TabIndex = 4;
             btAdministracion.Text = "Administración";
             btAdministracion.TextImageRelation = TextImageRelation.ImageBeforeText;
@@ -110,9 +113,10 @@
             btBitacora.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btBitacora.Image = Properties.Resources.agenda;
             btBitacora.ImageAlign = ContentAlignment.MiddleLeft;
-            btBitacora.Location = new Point(0, 154);
+            btBitacora.Location = new Point(0, 93);
+            btBitacora.Margin = new Padding(2);
             btBitacora.Name = "btBitacora";
-            btBitacora.Size = new Size(264, 56);
+            btBitacora.Size = new Size(185, 34);
             btBitacora.TabIndex = 3;
             btBitacora.Text = "Bitácora";
             btBitacora.TextImageRelation = TextImageRelation.ImageBeforeText;
@@ -130,9 +134,10 @@
             btVentas.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btVentas.Image = (Image)resources.GetObject("btVentas.Image");
             btVentas.ImageAlign = ContentAlignment.MiddleLeft;
-            btVentas.Location = new Point(0, 98);
+            btVentas.Location = new Point(0, 59);
+            btVentas.Margin = new Padding(2);
             btVentas.Name = "btVentas";
-            btVentas.Size = new Size(264, 56);
+            btVentas.Size = new Size(185, 34);
             btVentas.TabIndex = 2;
             btVentas.Text = "Ventas";
             btVentas.TextImageRelation = TextImageRelation.ImageBeforeText;
@@ -145,8 +150,9 @@
             pictureBox2.Dock = DockStyle.Top;
             pictureBox2.Image = Properties.Resources.magnific_genera_un_logo_para_un_mu_2885411368;
             pictureBox2.Location = new Point(0, 0);
+            pictureBox2.Margin = new Padding(2);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(264, 98);
+            pictureBox2.Size = new Size(185, 59);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox2.TabIndex = 2;
             pictureBox2.TabStop = false;
@@ -157,9 +163,10 @@
             panel2.Controls.Add(panel1);
             panel2.Controls.Add(pbMenu);
             panel2.Dock = DockStyle.Top;
-            panel2.Location = new Point(264, 0);
+            panel2.Location = new Point(185, 0);
+            panel2.Margin = new Padding(2);
             panel2.Name = "panel2";
-            panel2.Size = new Size(899, 60);
+            panel2.Size = new Size(629, 36);
             panel2.TabIndex = 1;
             panel2.MouseDown += panel2_MouseDown;
             // 
@@ -168,9 +175,10 @@
             panel1.Controls.Add(btMinimizar);
             panel1.Controls.Add(btMaximizar);
             panel1.Dock = DockStyle.Right;
-            panel1.Location = new Point(786, 0);
+            panel1.Location = new Point(550, 0);
+            panel1.Margin = new Padding(2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(113, 60);
+            panel1.Size = new Size(79, 36);
             panel1.TabIndex = 2;
             // 
             // btMinimizar
@@ -178,9 +186,10 @@
             btMinimizar.BackColor = Color.DimGray;
             btMinimizar.FlatStyle = FlatStyle.Flat;
             btMinimizar.Image = (Image)resources.GetObject("btMinimizar.Image");
-            btMinimizar.Location = new Point(3, 9);
+            btMinimizar.Location = new Point(2, 5);
+            btMinimizar.Margin = new Padding(2);
             btMinimizar.Name = "btMinimizar";
-            btMinimizar.Size = new Size(44, 36);
+            btMinimizar.Size = new Size(31, 22);
             btMinimizar.TabIndex = 3;
             btMinimizar.UseVisualStyleBackColor = false;
             btMinimizar.Click += btMinimizar_Click;
@@ -191,9 +200,10 @@
             btMaximizar.FlatAppearance.BorderColor = SystemColors.ActiveCaptionText;
             btMaximizar.FlatStyle = FlatStyle.Flat;
             btMaximizar.Image = Properties.Resources.minimizar;
-            btMaximizar.Location = new Point(53, 9);
+            btMaximizar.Location = new Point(37, 5);
+            btMaximizar.Margin = new Padding(2);
             btMaximizar.Name = "btMaximizar";
-            btMaximizar.Size = new Size(53, 36);
+            btMaximizar.Size = new Size(37, 22);
             btMaximizar.TabIndex = 2;
             btMaximizar.UseVisualStyleBackColor = false;
             btMaximizar.Click += btMaximizar_Click;
@@ -201,9 +211,10 @@
             // pbMenu
             // 
             pbMenu.Image = (Image)resources.GetObject("pbMenu.Image");
-            pbMenu.Location = new Point(6, 6);
+            pbMenu.Location = new Point(4, 4);
+            pbMenu.Margin = new Padding(2);
             pbMenu.Name = "pbMenu";
-            pbMenu.Size = new Size(39, 44);
+            pbMenu.Size = new Size(27, 26);
             pbMenu.SizeMode = PictureBoxSizeMode.CenterImage;
             pbMenu.TabIndex = 2;
             pbMenu.TabStop = false;
@@ -211,15 +222,18 @@
             // 
             // Inicio
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1163, 675);
+            ClientSize = new Size(814, 405);
             Controls.Add(panel2);
             Controls.Add(pMenu);
             FormBorderStyle = FormBorderStyle.None;
+            IsMdiContainer = true;
+            Margin = new Padding(2);
             Name = "Inicio";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Inicio";
+            WindowState = FormWindowState.Maximized;
             pMenu.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             panel2.ResumeLayout(false);

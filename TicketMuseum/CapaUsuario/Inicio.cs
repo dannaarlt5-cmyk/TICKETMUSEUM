@@ -14,6 +14,7 @@ namespace TicketMuseum
 {
     public partial class Inicio : Form
     {
+        
         [DllImport("user32.dll")]
         public static extern void ReleaseCapture();
 
@@ -28,6 +29,7 @@ namespace TicketMuseum
             btBitacora.Text = "";
             btCerrarSesión.Text = "";
         }
+       
         private void pictureBox2_Click(object sender, EventArgs e)
         {
 
@@ -55,18 +57,47 @@ namespace TicketMuseum
 
         private void btVentas_Click(object sender, EventArgs e)
         {
-            Ventas ventas = new Ventas();
-            ventas.FormClosed += (s, args) => this.Show();
-            ventas.Show();
-            this.Hide();
+          
+            Ventas formularioAbierto = Application.OpenForms.OfType<Ventas>().FirstOrDefault();
+
+            if (formularioAbierto != null)
+            {
+                
+                formularioAbierto.WindowState = FormWindowState.Normal; 
+                formularioAbierto.BringToFront();
+                formularioAbierto.Focus();
+            }
+            else
+            {
+                
+                Ventas ventas = new Ventas();
+                ventas.MdiParent = this;
+                ventas.FormClosed += (s, args) => this.Show();
+
+                ventas.Show();
+            }
+
         }
 
         private void btBitacora_Click(object sender, EventArgs e)
         {
-            Bitacora bitacora = new Bitacora();
-            bitacora.FormClosed += (s, args) => this.Show();
-            bitacora.Show();
-            this.Hide();
+         
+            Bitacora formAbierto = Application.OpenForms.OfType<Bitacora>().FirstOrDefault();
+
+            if (formAbierto != null)
+            {
+                formAbierto.WindowState = FormWindowState.Normal;
+                formAbierto.BringToFront();
+                formAbierto.Focus();
+            }
+            else
+            {
+                Bitacora bitacora = new Bitacora();
+                bitacora.MdiParent = this;
+                bitacora.FormClosed += (s, args) => this.Show();
+                bitacora.Show();
+            }
+
         }
 
         private void btCerrarSesión_Click(object sender, EventArgs e)
@@ -97,11 +128,25 @@ namespace TicketMuseum
 
         private void btAdministracion_Click(object sender, EventArgs e)
         {
-            Administración administración = new Administración();
             
-            administración.FormClosed += (s, args) => this.Show();
-            administración.Show();
-            this.Hide();
+            Administración formAbierto = Application.OpenForms.OfType<Administración>().FirstOrDefault();
+           
+
+
+            if (formAbierto != null)
+            {
+                formAbierto.WindowState = FormWindowState.Normal;
+                formAbierto.BringToFront();
+                formAbierto.Focus();
+            }
+            else
+            {
+                Administración admin = new Administración();
+                admin.MdiParent = this;
+                admin.FormClosed += (s, args) => this.Show();
+                admin.Show();
+            }
+
         }
     }
 }
