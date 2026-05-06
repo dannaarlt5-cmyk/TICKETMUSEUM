@@ -9,40 +9,40 @@ namespace TicketMuseum
         #region Eventos Usuario Y Contraseña
         private void btAcceder_Click(object sender, EventArgs e)
         {
-            // 1. Definimos las credenciales válidas (puedes cambiarlas aquí)
+            
             string usuarioCorrecto = "admin";
             string contrasenaCorrecta = "1234";
-
-            // 2. Obtenemos lo que el usuario escribió en los TextBox
             string user = tbUsuario.Text;
             string pass = tbContrasena.Text;
 
-            // 3. Validamos que no entren con los campos vacíos o con el texto por defecto
+         
             if (user == "Usuario" || string.IsNullOrWhiteSpace(user) ||
                 pass == "Contraseña" || string.IsNullOrWhiteSpace(pass))
             {
                 MessageBox.Show("Por favor, ingrese su usuario y contraseña.", "Campos vacíos",
                                  MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return; // Salimos del método para que no intente entrar
+                return; 
             }
 
-            // 4. Comprobamos si las credenciales coinciden
+           
             if (user == usuarioCorrecto && pass == contrasenaCorrecta)
             {
-                // SI SON CORRECTOS: Abrimos el formulario Inicio
+                
                 Inicio inicio = new Inicio();
                 inicio.FormClosed += (s, args) => this.Show();
                 inicio.Show();
                 this.Hide();
+                tbUsuario.Text = "Usuario";
+                tbContrasena.Clear();
             }
             else
             {
-                // SI SON INCORRECTOS: Mostramos error y limpiamos la contraseña
+               
                 MessageBox.Show("Usuario o contraseña incorrectos.", "Error de acceso",
                                  MessageBoxButtons.OK, MessageBoxIcon.Error);
 
                 tbContrasena.Clear();
-                tbContrasena.Focus(); // Ponemos el cursor listo para reintentar
+                tbContrasena.Focus(); 
             }
         }
         private void tbUsuario_Click(object sender, EventArgs e)

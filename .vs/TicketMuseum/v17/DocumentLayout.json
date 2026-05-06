@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\ProyectoRepGit\\TICKETMUSEUM\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{22B0D068-1020-4930-9F71-1A0FF7CD36FE}|TicketMuseum\\TicketMuseum.csproj|C:\\ProyectoRepGit\\TICKETMUSEUM\\ticketmuseum\\capausuario\\ventas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{22B0D068-1020-4930-9F71-1A0FF7CD36FE}|TicketMuseum\\TicketMuseum.csproj|solutionrelative:ticketmuseum\\capausuario\\ventas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{22B0D068-1020-4930-9F71-1A0FF7CD36FE}|TicketMuseum\\TicketMuseum.csproj|c:\\proyectorepgit\\ticketmuseum\\ticketmuseum\\capausuario\\administraci\u00F3n.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22B0D068-1020-4930-9F71-1A0FF7CD36FE}|TicketMuseum\\TicketMuseum.csproj|solutionrelative:ticketmuseum\\capausuario\\administraci\u00F3n.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{22B0D068-1020-4930-9F71-1A0FF7CD36FE}|TicketMuseum\\TicketMuseum.csproj|c:\\proyectorepgit\\ticketmuseum\\ticketmuseum\\capausuario\\ventas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{22B0D068-1020-4930-9F71-1A0FF7CD36FE}|TicketMuseum\\TicketMuseum.csproj|solutionrelative:ticketmuseum\\capausuario\\ventas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{22B0D068-1020-4930-9F71-1A0FF7CD36FE}|TicketMuseum\\TicketMuseum.csproj|C:\\ProyectoRepGit\\TICKETMUSEUM\\ticketmuseum\\capausuario\\administraci\u00F3n.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{22B0D068-1020-4930-9F71-1A0FF7CD36FE}|TicketMuseum\\TicketMuseum.csproj|solutionrelative:ticketmuseum\\capausuario\\administraci\u00F3n.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{22B0D068-1020-4930-9F71-1A0FF7CD36FE}|TicketMuseum\\TicketMuseum.csproj|c:\\proyectorepgit\\ticketmuseum\\ticketmuseum\\capaconexion\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{22B0D068-1020-4930-9F71-1A0FF7CD36FE}|TicketMuseum\\TicketMuseum.csproj|solutionrelative:ticketmuseum\\capaconexion\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{22B0D068-1020-4930-9F71-1A0FF7CD36FE}|TicketMuseum\\TicketMuseum.csproj|C:\\ProyectoRepGit\\TICKETMUSEUM\\ticketmuseum\\capausuario\\bitacora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{22B0D068-1020-4930-9F71-1A0FF7CD36FE}|TicketMuseum\\TicketMuseum.csproj|solutionrelative:ticketmuseum\\capausuario\\bitacora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{22B0D068-1020-4930-9F71-1A0FF7CD36FE}|TicketMuseum\\TicketMuseum.csproj|c:\\proyectorepgit\\ticketmuseum\\ticketmuseum\\capausuario\\inicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -23,20 +23,28 @@
       "RelativeMoniker": "D:0:0:{22B0D068-1020-4930-9F71-1A0FF7CD36FE}|TicketMuseum\\TicketMuseum.csproj|solutionrelative:ticketmuseum\\capausuario\\inicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{22B0D068-1020-4930-9F71-1A0FF7CD36FE}|TicketMuseum\\TicketMuseum.csproj|C:\\ProyectoRepGit\\TICKETMUSEUM\\ticketmuseum\\capausuario\\bitacora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{22B0D068-1020-4930-9F71-1A0FF7CD36FE}|TicketMuseum\\TicketMuseum.csproj|solutionrelative:ticketmuseum\\capausuario\\bitacora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{22B0D068-1020-4930-9F71-1A0FF7CD36FE}|TicketMuseum\\TicketMuseum.csproj|C:\\ProyectoRepGit\\TICKETMUSEUM\\ticketmuseum\\capausuario\\administraci\u00F3n.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{22B0D068-1020-4930-9F71-1A0FF7CD36FE}|TicketMuseum\\TicketMuseum.csproj|solutionrelative:ticketmuseum\\capausuario\\administraci\u00F3n.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{22B0D068-1020-4930-9F71-1A0FF7CD36FE}|TicketMuseum\\TicketMuseum.csproj|c:\\proyectorepgit\\ticketmuseum\\ticketmuseum\\capausuario\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{22B0D068-1020-4930-9F71-1A0FF7CD36FE}|TicketMuseum\\TicketMuseum.csproj|solutionrelative:ticketmuseum\\capausuario\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{22B0D068-1020-4930-9F71-1A0FF7CD36FE}|TicketMuseum\\TicketMuseum.csproj|C:\\ProyectoRepGit\\TICKETMUSEUM\\ticketmuseum\\capausuario\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{22B0D068-1020-4930-9F71-1A0FF7CD36FE}|TicketMuseum\\TicketMuseum.csproj|solutionrelative:ticketmuseum\\capausuario\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22B0D068-1020-4930-9F71-1A0FF7CD36FE}|TicketMuseum\\TicketMuseum.csproj|c:\\proyectorepgit\\ticketmuseum\\ticketmuseum\\capausuario\\bitacora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22B0D068-1020-4930-9F71-1A0FF7CD36FE}|TicketMuseum\\TicketMuseum.csproj|solutionrelative:ticketmuseum\\capausuario\\bitacora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22B0D068-1020-4930-9F71-1A0FF7CD36FE}|TicketMuseum\\TicketMuseum.csproj|c:\\proyectorepgit\\ticketmuseum\\ticketmuseum\\capaconexion\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22B0D068-1020-4930-9F71-1A0FF7CD36FE}|TicketMuseum\\TicketMuseum.csproj|solutionrelative:ticketmuseum\\capaconexion\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22B0D068-1020-4930-9F71-1A0FF7CD36FE}|TicketMuseum\\TicketMuseum.csproj|C:\\ProyectoRepGit\\TICKETMUSEUM\\ticketmuseum\\capausuario\\ventas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{22B0D068-1020-4930-9F71-1A0FF7CD36FE}|TicketMuseum\\TicketMuseum.csproj|solutionrelative:ticketmuseum\\capausuario\\ventas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22B0D068-1020-4930-9F71-1A0FF7CD36FE}|TicketMuseum\\TicketMuseum.csproj|c:\\proyectorepgit\\ticketmuseum\\ticketmuseum\\capausuario\\ventas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22B0D068-1020-4930-9F71-1A0FF7CD36FE}|TicketMuseum\\TicketMuseum.csproj|solutionrelative:ticketmuseum\\capausuario\\ventas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,11 +54,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 6,
               "Title": "Form1.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\ProyectoRepGit\\TICKETMUSEUM\\TicketMuseum\\CapaUsuario\\Form1.cs",
               "RelativeDocumentMoniker": "TicketMuseum\\CapaUsuario\\Form1.cs",
@@ -74,7 +82,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 9,
               "Title": "Ventas.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\ProyectoRepGit\\TICKETMUSEUM\\TicketMuseum\\CapaUsuario\\Ventas.cs",
               "RelativeDocumentMoniker": "TicketMuseum\\CapaUsuario\\Ventas.cs",
@@ -82,12 +90,11 @@
               "RelativeToolTip": "TicketMuseum\\CapaUsuario\\Ventas.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-30T01:25:50.504Z",
-              "IsPinned": true,
-              "EditorCaption": " [Dise\u00F1o]"
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "Bitacora.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\ProyectoRepGit\\TICKETMUSEUM\\TicketMuseum\\CapaUsuario\\Bitacora.cs",
               "RelativeDocumentMoniker": "TicketMuseum\\CapaUsuario\\Bitacora.cs",
@@ -99,40 +106,53 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Administraci\u00F3n.cs [Dise\u00F1o]",
+              "DocumentIndex": 1,
+              "Title": "Administraci\u00F3n.cs [Design]",
               "DocumentMoniker": "C:\\ProyectoRepGit\\TICKETMUSEUM\\TicketMuseum\\CapaUsuario\\Administraci\u00F3n.cs",
               "RelativeDocumentMoniker": "TicketMuseum\\CapaUsuario\\Administraci\u00F3n.cs",
-              "ToolTip": "C:\\ProyectoRepGit\\TICKETMUSEUM\\TicketMuseum\\CapaUsuario\\Administraci\u00F3n.cs [Dise\u00F1o]",
-              "RelativeToolTip": "TicketMuseum\\CapaUsuario\\Administraci\u00F3n.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\ProyectoRepGit\\TICKETMUSEUM\\TicketMuseum\\CapaUsuario\\Administraci\u00F3n.cs [Design]",
+              "RelativeToolTip": "TicketMuseum\\CapaUsuario\\Administraci\u00F3n.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-30T01:33:12.255Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Ventas.cs",
-              "DocumentMoniker": "C:\\ProyectoRepGit\\TICKETMUSEUM\\TicketMuseum\\CapaUsuario\\Ventas.cs",
-              "RelativeDocumentMoniker": "TicketMuseum\\CapaUsuario\\Ventas.cs",
-              "ToolTip": "C:\\ProyectoRepGit\\TICKETMUSEUM\\TicketMuseum\\CapaUsuario\\Ventas.cs",
-              "RelativeToolTip": "TicketMuseum\\CapaUsuario\\Ventas.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAAwCAAAAAKAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Administraci\u00F3n.cs",
+              "DocumentMoniker": "C:\\ProyectoRepGit\\TICKETMUSEUM\\TicketMuseum\\CapaUsuario\\Administraci\u00F3n.cs",
+              "RelativeDocumentMoniker": "TicketMuseum\\CapaUsuario\\Administraci\u00F3n.cs",
+              "ToolTip": "C:\\ProyectoRepGit\\TICKETMUSEUM\\TicketMuseum\\CapaUsuario\\Administraci\u00F3n.cs",
+              "RelativeToolTip": "TicketMuseum\\CapaUsuario\\Administraci\u00F3n.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFsAAABZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-04T07:12:39.921Z",
+              "WhenOpened": "2026-05-04T20:24:24.676Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 8,
               "Title": "Conexion.cs",
               "DocumentMoniker": "C:\\ProyectoRepGit\\TICKETMUSEUM\\TicketMuseum\\CapaConexion\\Conexion.cs",
               "RelativeDocumentMoniker": "TicketMuseum\\CapaConexion\\Conexion.cs",
               "ToolTip": "C:\\ProyectoRepGit\\TICKETMUSEUM\\TicketMuseum\\CapaConexion\\Conexion.cs",
               "RelativeToolTip": "TicketMuseum\\CapaConexion\\Conexion.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAACTAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-04T07:07:49.053Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\ProyectoRepGit\\TICKETMUSEUM\\TicketMuseum\\CapaUsuario\\Form1.cs",
+              "RelativeDocumentMoniker": "TicketMuseum\\CapaUsuario\\Form1.cs",
+              "ToolTip": "C:\\ProyectoRepGit\\TICKETMUSEUM\\TicketMuseum\\CapaUsuario\\Form1.cs",
+              "RelativeToolTip": "TicketMuseum\\CapaUsuario\\Form1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-04T06:54:05.02Z"
             },
             {
               "$type": "Document",
@@ -142,21 +162,33 @@
               "RelativeDocumentMoniker": "TicketMuseum\\CapaUsuario\\Inicio.cs",
               "ToolTip": "C:\\ProyectoRepGit\\TICKETMUSEUM\\TicketMuseum\\CapaUsuario\\Inicio.cs",
               "RelativeToolTip": "TicketMuseum\\CapaUsuario\\Inicio.cs",
-              "ViewState": "AgIAAH0AAAAAAAAAAAAswEkAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAJEAAAAAAAAAAAAwwK4AAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-04T06:52:34.181Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\ProyectoRepGit\\TICKETMUSEUM\\TicketMuseum\\CapaUsuario\\Form1.cs",
-              "RelativeDocumentMoniker": "TicketMuseum\\CapaUsuario\\Form1.cs",
-              "ToolTip": "C:\\ProyectoRepGit\\TICKETMUSEUM\\TicketMuseum\\CapaUsuario\\Form1.cs",
-              "RelativeToolTip": "TicketMuseum\\CapaUsuario\\Form1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAANAAAAAAAAAA==",
+              "Title": "Bitacora.cs",
+              "DocumentMoniker": "C:\\ProyectoRepGit\\TICKETMUSEUM\\TicketMuseum\\CapaUsuario\\Bitacora.cs",
+              "RelativeDocumentMoniker": "TicketMuseum\\CapaUsuario\\Bitacora.cs",
+              "ToolTip": "C:\\ProyectoRepGit\\TICKETMUSEUM\\TicketMuseum\\CapaUsuario\\Bitacora.cs",
+              "RelativeToolTip": "TicketMuseum\\CapaUsuario\\Bitacora.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAQwFMAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-04T06:54:05.02Z"
+              "WhenOpened": "2026-05-04T18:57:42.007Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Ventas.cs",
+              "DocumentMoniker": "C:\\ProyectoRepGit\\TICKETMUSEUM\\TicketMuseum\\CapaUsuario\\Ventas.cs",
+              "RelativeDocumentMoniker": "TicketMuseum\\CapaUsuario\\Ventas.cs",
+              "ToolTip": "C:\\ProyectoRepGit\\TICKETMUSEUM\\TicketMuseum\\CapaUsuario\\Ventas.cs",
+              "RelativeToolTip": "TicketMuseum\\CapaUsuario\\Ventas.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAwCAAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-04T07:12:39.921Z"
             }
           ]
         }

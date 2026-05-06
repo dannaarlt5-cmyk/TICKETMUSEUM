@@ -40,11 +40,21 @@
             btMinimizar = new Button();
             btMaximizar = new Button();
             pbMenu = new PictureBox();
+            pVentas = new Panel();
+            lblTotalVentas = new Label();
+            label1 = new Label();
+            pVisitantes = new Panel();
+            lblTotalVisitantes = new Label();
+            label4 = new Label();
+            backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            lblBien = new Label();
             pMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             panel2.SuspendLayout();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pbMenu).BeginInit();
+            pVentas.SuspendLayout();
+            pVisitantes.SuspendLayout();
             SuspendLayout();
             // 
             // pMenu
@@ -59,7 +69,7 @@
             pMenu.Location = new Point(0, 0);
             pMenu.Margin = new Padding(2);
             pMenu.Name = "pMenu";
-            pMenu.Size = new Size(185, 405);
+            pMenu.Size = new Size(185, 571);
             pMenu.TabIndex = 0;
             // 
             // btCerrarSesión
@@ -72,7 +82,7 @@
             btCerrarSesión.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btCerrarSesión.Image = Properties.Resources.cerrar_sesion;
             btCerrarSesión.ImageAlign = ContentAlignment.MiddleLeft;
-            btCerrarSesión.Location = new Point(0, 371);
+            btCerrarSesión.Location = new Point(0, 537);
             btCerrarSesión.Margin = new Padding(2);
             btCerrarSesión.Name = "btCerrarSesión";
             btCerrarSesión.Size = new Size(185, 34);
@@ -166,7 +176,7 @@
             panel2.Location = new Point(185, 0);
             panel2.Margin = new Padding(2);
             panel2.Name = "panel2";
-            panel2.Size = new Size(629, 36);
+            panel2.Size = new Size(850, 36);
             panel2.TabIndex = 1;
             panel2.MouseDown += panel2_MouseDown;
             // 
@@ -175,7 +185,7 @@
             panel1.Controls.Add(btMinimizar);
             panel1.Controls.Add(btMaximizar);
             panel1.Dock = DockStyle.Right;
-            panel1.Location = new Point(550, 0);
+            panel1.Location = new Point(771, 0);
             panel1.Margin = new Padding(2);
             panel1.Name = "panel1";
             panel1.Size = new Size(79, 36);
@@ -220,11 +230,90 @@
             pbMenu.TabStop = false;
             pbMenu.Click += pbMenu_Click;
             // 
+            // pVentas
+            // 
+            pVentas.BackColor = Color.FromArgb(128, 128, 255);
+            pVentas.Controls.Add(lblTotalVentas);
+            pVentas.Controls.Add(label1);
+            pVentas.Location = new Point(539, 265);
+            pVentas.Name = "pVentas";
+            pVentas.Size = new Size(383, 119);
+            pVentas.TabIndex = 3;
+            // 
+            // lblTotalVentas
+            // 
+            lblTotalVentas.AutoSize = true;
+            lblTotalVentas.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblTotalVentas.Location = new Point(170, 64);
+            lblTotalVentas.Name = "lblTotalVentas";
+            lblTotalVentas.Size = new Size(22, 25);
+            lblTotalVentas.TabIndex = 1;
+            lblTotalVentas.Text = "$";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(101, 13);
+            label1.Name = "label1";
+            label1.Size = new Size(200, 32);
+            label1.TabIndex = 0;
+            label1.Text = "VENTAS DE HOY";
+            // 
+            // pVisitantes
+            // 
+            pVisitantes.BackColor = Color.Green;
+            pVisitantes.Controls.Add(lblTotalVisitantes);
+            pVisitantes.Controls.Add(label4);
+            pVisitantes.Location = new Point(539, 461);
+            pVisitantes.Name = "pVisitantes";
+            pVisitantes.Size = new Size(395, 110);
+            pVisitantes.TabIndex = 4;
+            // 
+            // lblTotalVisitantes
+            // 
+            lblTotalVisitantes.AutoSize = true;
+            lblTotalVisitantes.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblTotalVisitantes.Location = new Point(170, 64);
+            lblTotalVisitantes.Name = "lblTotalVisitantes";
+            lblTotalVisitantes.Size = new Size(22, 25);
+            lblTotalVisitantes.TabIndex = 3;
+            lblTotalVisitantes.Text = "0";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label4.Location = new Point(75, 13);
+            label4.Name = "label4";
+            label4.Size = new Size(243, 32);
+            label4.TabIndex = 2;
+            label4.Text = "VISITANTES DE HOY";
+            // 
+            // backgroundWorker1
+            // 
+            backgroundWorker1.DoWork += backgroundWorker1_DoWork;
+            backgroundWorker1.RunWorkerCompleted += backgroundWorker1_RunWorkerCompleted;
+            // 
+            // lblBien
+            // 
+            lblBien.AutoSize = true;
+            lblBien.BackColor = SystemColors.AppWorkspace;
+            lblBien.Font = new Font("Segoe UI", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblBien.Location = new Point(581, 113);
+            lblBien.Name = "lblBien";
+            lblBien.Size = new Size(320, 65);
+            lblBien.TabIndex = 6;
+            lblBien.Text = "BIENVENIDO";
+            // 
             // Inicio
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(814, 405);
+            ClientSize = new Size(1035, 571);
+            Controls.Add(lblBien);
+            Controls.Add(pVisitantes);
+            Controls.Add(pVentas);
             Controls.Add(panel2);
             Controls.Add(pMenu);
             FormBorderStyle = FormBorderStyle.None;
@@ -234,12 +323,19 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Inicio";
             WindowState = FormWindowState.Maximized;
+            Load += Inicio_Load;
+            Shown += Inicio_Shown;
             pMenu.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             panel2.ResumeLayout(false);
             panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pbMenu).EndInit();
+            pVentas.ResumeLayout(false);
+            pVentas.PerformLayout();
+            pVisitantes.ResumeLayout(false);
+            pVisitantes.PerformLayout();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -255,5 +351,13 @@
         private Button btMinimizar;
         private Button btMaximizar;
         private Panel panel1;
+        private Panel pVentas;
+        private Panel pVisitantes;
+        private Label lblTotalVentas;
+        private Label label1;
+        private Label lblTotalVisitantes;
+        private Label label4;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private Label lblBien;
     }
 }
