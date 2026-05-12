@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TicketMuseum")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+64db5a2002ca4d6a167061b6c79bd9762340668e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7f8a800293579cfd6b4e5baf34a928e709d1c5fe")]
 [assembly: System.Reflection.AssemblyProductAttribute("TicketMuseum")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TicketMuseum")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

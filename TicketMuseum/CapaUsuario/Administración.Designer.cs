@@ -34,12 +34,12 @@
             button1 = new Button();
             button2 = new Button();
             label1 = new Label();
-            label2 = new Label();
+            lblFecha = new Label();
             label4 = new Label();
             label5 = new Label();
-            label6 = new Label();
+            lblTotalRecaudado = new Label();
             label7 = new Label();
-            label8 = new Label();
+            lblHora = new Label();
             label9 = new Label();
             btVolver = new Button();
             panel2 = new Panel();
@@ -84,6 +84,7 @@
             button1.TabIndex = 6;
             button1.Text = "imprimir";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // button2
             // 
@@ -100,6 +101,7 @@
             button2.TabIndex = 7;
             button2.Text = "Cerrar Caja";
             button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // label1
             // 
@@ -111,15 +113,15 @@
             label1.TabIndex = 8;
             label1.Text = " CIERRE DE CAJA ";
             // 
-            // label2
+            // lblFecha
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Arial", 11F);
-            label2.Location = new Point(194, 172);
-            label2.Name = "label2";
-            label2.Size = new Size(120, 25);
-            label2.TabIndex = 9;
-            label2.Text = "29/04/2026";
+            lblFecha.AutoSize = true;
+            lblFecha.Font = new Font("Arial", 11F);
+            lblFecha.Location = new Point(194, 172);
+            lblFecha.Name = "lblFecha";
+            lblFecha.Size = new Size(120, 25);
+            lblFecha.TabIndex = 9;
+            lblFecha.Text = "29/04/2026";
             // 
             // label4
             // 
@@ -141,15 +143,15 @@
             label5.TabIndex = 12;
             label5.Text = " Monto Total Recaudado:";
             // 
-            // label6
+            // lblTotalRecaudado
             // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Arial", 11F);
-            label6.Location = new Point(245, 281);
-            label6.Name = "label6";
-            label6.Size = new Size(114, 25);
-            label6.TabIndex = 11;
-            label6.Text = "$ 3,580.50";
+            lblTotalRecaudado.AutoSize = true;
+            lblTotalRecaudado.Font = new Font("Arial", 11F);
+            lblTotalRecaudado.Location = new Point(245, 281);
+            lblTotalRecaudado.Name = "lblTotalRecaudado";
+            lblTotalRecaudado.Size = new Size(114, 25);
+            lblTotalRecaudado.TabIndex = 11;
+            lblTotalRecaudado.Text = "$ 3,580.50";
             // 
             // label7
             // 
@@ -161,15 +163,15 @@
             label7.TabIndex = 14;
             label7.Text = "Hora: ";
             // 
-            // label8
+            // lblHora
             // 
-            label8.AutoSize = true;
-            label8.Font = new Font("Arial", 11F);
-            label8.Location = new Point(420, 173);
-            label8.Name = "label8";
-            label8.Size = new Size(66, 25);
-            label8.TabIndex = 13;
-            label8.Text = "17:45";
+            lblHora.AutoSize = true;
+            lblHora.Font = new Font("Arial", 11F);
+            lblHora.Location = new Point(420, 173);
+            lblHora.Name = "lblHora";
+            lblHora.Size = new Size(66, 25);
+            lblHora.TabIndex = 13;
+            lblHora.Text = "17:45";
             // 
             // label9
             // 
@@ -226,11 +228,11 @@
             Controls.Add(panel2);
             Controls.Add(btVolver);
             Controls.Add(label7);
-            Controls.Add(label8);
+            Controls.Add(lblHora);
             Controls.Add(label5);
-            Controls.Add(label6);
+            Controls.Add(lblTotalRecaudado);
             Controls.Add(label4);
-            Controls.Add(label2);
+            Controls.Add(lblFecha);
             Controls.Add(label1);
             Controls.Add(button2);
             Controls.Add(button1);
@@ -239,6 +241,7 @@
             Name = "Administración";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Administración";
+            Load += Administración_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             panel2.ResumeLayout(false);
@@ -253,12 +256,12 @@
         private Button button1;
         private Button button2;
         private Label label1;
-        private Label label2;
+        private Label lblFecha;
         private Label label4;
         private Label label5;
-        private Label label6;
+        private Label lblTotalRecaudado;
         private Label label7;
-        private Label label8;
+        private Label lblHora;
         private Label label9;
         private Button btVolver;
         private Panel panel2;
