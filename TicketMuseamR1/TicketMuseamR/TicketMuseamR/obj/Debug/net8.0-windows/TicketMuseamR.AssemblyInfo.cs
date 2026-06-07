@@ -14,7 +14,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TicketMuseamR")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+<<<<<<< HEAD
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7f8a800293579cfd6b4e5baf34a928e709d1c5fe")]
+>>>>>>> 4508509 (Se agregaron cambios al codigo de ventas y se modifico el login)
 [assembly: System.Reflection.AssemblyProductAttribute("TicketMuseamR")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TicketMuseamR")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

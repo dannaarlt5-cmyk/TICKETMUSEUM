@@ -116,7 +116,11 @@ namespace TicketMuseamR {
                 return;
             }
             _contentLoaded = true;
+<<<<<<< HEAD
             System.Uri resourceLocater = new System.Uri("/TicketMuseamR;component/ventaspage.xaml", System.UriKind.Relative);
+=======
+            System.Uri resourceLocater = new System.Uri("/TicketMuseamR;V1.0.0.0;component/ventaspage.xaml", System.UriKind.Relative);
+>>>>>>> 4508509 (Se agregaron cambios al codigo de ventas y se modifico el login)
             
             #line 1 "..\..\..\VentasPage.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

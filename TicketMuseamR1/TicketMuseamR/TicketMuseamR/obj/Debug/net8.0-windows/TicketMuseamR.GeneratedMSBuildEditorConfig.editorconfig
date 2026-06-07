@@ -8,7 +8,11 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = TicketMuseamR
+<<<<<<< HEAD
 build_property.ProjectDir = C:\ProyectoGit2\TicketMuseamR\TicketMuseamR\
+=======
+build_property.ProjectDir = C:\ProyectoRepGit\TICKETMUSEUM\TicketMuseamR1\TicketMuseamR\TicketMuseamR\
+>>>>>>> 4508509 (Se agregaron cambios al codigo de ventas y se modifico el login)
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.CsWinRTUseWindowsUIXamlProjections = false

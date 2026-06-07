@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "lfPf1etkNIU=",
   "success": true,
   "projectFilePath": "C:\\ProyectoGit2\\TicketMuseamR\\TicketMuseamR\\TicketMuseamR.csproj",
+=======
+  "dgSpecHash": "f8ugJleCLVU=",
+  "success": true,
+  "projectFilePath": "C:\\ProyectoRepGit\\TICKETMUSEUM\\TicketMuseamR1\\TicketMuseamR\\TicketMuseamR\\TicketMuseamR.csproj",
+>>>>>>> 4508509 (Se agregaron cambios al codigo de ventas y se modifico el login)
   "expectedPackageFiles": [
     "C:\\Users\\edith\\.nuget\\packages\\microsoft.bcl.cryptography\\8.0.0\\microsoft.bcl.cryptography.8.0.0.nupkg.sha512",
     "C:\\Users\\edith\\.nuget\\packages\\microsoft.data.sqlclient\\7.0.1\\microsoft.data.sqlclient.7.0.1.nupkg.sha512",
