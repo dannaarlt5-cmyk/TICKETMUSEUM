@@ -79,3 +79,5 @@ C:\ProyectoGit2\TicketMuseamR\TicketMuseamR\obj\Debug\net8.0-windows\InicioPage.
 C:\ProyectoGit2\TicketMuseamR\TicketMuseamR\obj\Debug\net8.0-windows\VentasPage.baml
 C:\ProyectoGit2\TicketMuseamR\TicketMuseamR\obj\Debug\net8.0-windows\InicioPage.g.cs
 C:\ProyectoGit2\TicketMuseamR\TicketMuseamR\obj\Debug\net8.0-windows\VentasPage.g.cs
+C:\ProyectoGit2\TicketMuseamR\TicketMuseamR\obj\Debug\net8.0-windows\BitacoraPage.baml
+C:\ProyectoGit2\TicketMuseamR\TicketMuseamR\obj\Debug\net8.0-windows\BitacoraPage.g.cs

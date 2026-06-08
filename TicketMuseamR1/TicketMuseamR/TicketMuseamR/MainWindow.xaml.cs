@@ -33,8 +33,7 @@ namespace TicketMuseamR
 
         private void NavBitacora_Click(object sender, RoutedEventArgs e)
         {
-            // Apunta a la página de bitácora de Evelin cuando esté lista como Page
-            // MainFrame.Navigate(new Uri("BitacoraPage.xaml", UriKind.Relative));
+            MainFrame.Navigate(new Uri("BitacoraPage.xaml", UriKind.Relative));
         }
 
         private void NavAdmin_Click(object sender, RoutedEventArgs e)

@@ -61,17 +61,10 @@ namespace TicketMuseamR
             }
         }
 
-<<<<<<< HEAD
         // REGISTRO ADAPTADO A TUS TABLAS EXACTAS
         private void BtnRegistrar_Click(object sender, RoutedEventArgs e)
         {
             // Validaciones
-=======
-       
-        private void BtnRegistrar_Click(object sender, RoutedEventArgs e)
-        {
-           
->>>>>>> 4508509 (Se agregaron cambios al codigo de ventas y se modifico el login)
             if (string.IsNullOrWhiteSpace(txtResponsable.Text))
             {
                 MessageBox.Show("Por favor, ingresa el nombre del responsable del grupo.", "Campos incompletos", MessageBoxButton.OK, MessageBoxImage.Warning);
@@ -84,21 +77,13 @@ namespace TicketMuseamR
                 return;
             }
 
-<<<<<<< HEAD
             // Preparar los datos con tus tipos de datos de SQL
-=======
-      
->>>>>>> 4508509 (Se agregaron cambios al codigo de ventas y se modifico el login)
             string nombreResponsable = txtResponsable.Text;
             decimal montoTotal = Convert.ToDecimal(cantidadBoletos * PRECIO_BOLETO);
             string metodoPago = ((ComboBoxItem)cboMetodoPago.SelectedItem).Content.ToString();
 
-<<<<<<< HEAD
             // Como pusiste DEFAULT GETDATE() en hora_ent y Fecha_venta, SQL se encarga de la fecha solo.
             // Así que nuestras consultas solo necesitan mandar los datos obligatorios.
-=======
-        
->>>>>>> 4508509 (Se agregaron cambios al codigo de ventas y se modifico el login)
             string queryVisitantes = "INSERT INTO TB_VISITANTES (Nom_visita, Cant_bol) VALUES (@Nom_visita, @Cant_bol);";
             string queryVentas = "INSERT INTO TB_VENTAS (Monto_total, Metodo_pago) VALUES (@Monto_total, @Metodo_pago);";
 
@@ -108,11 +93,7 @@ namespace TicketMuseamR
                 {
                     conexion.Open();
 
-<<<<<<< HEAD
                     // Insertar en TB_VISITANTES
-=======
-                  
->>>>>>> 4508509 (Se agregaron cambios al codigo de ventas y se modifico el login)
                     using (SqlCommand cmdVisita = new SqlCommand(queryVisitantes, conexion))
                     {
                         cmdVisita.Parameters.AddWithValue("@Nom_visita", nombreResponsable);
@@ -120,11 +101,7 @@ namespace TicketMuseamR
                         cmdVisita.ExecuteNonQuery();
                     }
 
-<<<<<<< HEAD
                     // Insertar en TB_VENTAS
-=======
-                   
->>>>>>> 4508509 (Se agregaron cambios al codigo de ventas y se modifico el login)
                     using (SqlCommand cmdVenta = new SqlCommand(queryVentas, conexion))
                     {
                         cmdVenta.Parameters.AddWithValue("@Monto_total", montoTotal);
@@ -132,11 +109,7 @@ namespace TicketMuseamR
                         cmdVenta.ExecuteNonQuery();
                     }
 
-<<<<<<< HEAD
                     // Mensaje de Éxito
-=======
-                    
->>>>>>> 4508509 (Se agregaron cambios al codigo de ventas y se modifico el login)
                     MessageBox.Show($"¡Registro completado en BDMUSEO!\n\n" +
                                     $"Tabla Visitantes 👤: Se registró a {nombreResponsable} con {cantidadBoletos} boletos.\n" +
                                     $"Tabla Ventas 💰: Monto de $ {montoTotal:F2} pagado con {metodoPago}.",

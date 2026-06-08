@@ -1368,19 +1368,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
       "projectUniqueName": "C:\\ProyectoGit2\\TicketMuseamR\\TicketMuseamR\\TicketMuseamR.csproj",
       "projectName": "TicketMuseamR",
       "projectPath": "C:\\ProyectoGit2\\TicketMuseamR\\TicketMuseamR\\TicketMuseamR.csproj",
       "packagesPath": "C:\\Users\\edith\\.nuget\\packages\\",
       "outputPath": "C:\\ProyectoGit2\\TicketMuseamR\\TicketMuseamR\\obj\\",
-=======
-      "projectUniqueName": "C:\\ProyectoRepGit\\TICKETMUSEUM\\TicketMuseamR1\\TicketMuseamR\\TicketMuseamR\\TicketMuseamR.csproj",
-      "projectName": "TicketMuseamR",
-      "projectPath": "C:\\ProyectoRepGit\\TICKETMUSEUM\\TicketMuseamR1\\TicketMuseamR\\TicketMuseamR\\TicketMuseamR.csproj",
-      "packagesPath": "C:\\Users\\edith\\.nuget\\packages\\",
-      "outputPath": "C:\\ProyectoRepGit\\TICKETMUSEUM\\TicketMuseamR1\\TicketMuseamR\\TicketMuseamR\\obj\\",
->>>>>>> 4508509 (Se agregaron cambios al codigo de ventas y se modifico el login)
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

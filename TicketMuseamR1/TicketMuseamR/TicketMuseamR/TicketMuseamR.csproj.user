@@ -5,6 +5,9 @@
     <Compile Update="AdminWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="BitacoraPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="BitacoraWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
