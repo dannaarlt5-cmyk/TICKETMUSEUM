@@ -24,10 +24,12 @@ namespace TicketMuseamR
     public partial class AdminPage : Page
     {
         private string conexionString = @"Server=(local)\SQLEXPRESS;Database=BDMUSEO;Integrated Security=True; TrustServerCertificate=True";
+
         public AdminPage()
         {
             InitializeComponent();
         }
+
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
             // Inicializar los filtros con la fecha de hoy por defecto al entrar
@@ -53,10 +55,8 @@ namespace TicketMuseamR
         // MÉTODO MAESTRO: Calcula montos y boletos basados en las fechas seleccionadas
         private void CargarDatosPorFecha()
         {
-            // Validar que los objetos visuales ya existan
             if (dpDesde == null || dpHasta == null || lblTotalRecaudado == null || lblTotalBoletos == null || dgVentas == null) return;
 
-            // Obtener fechas seleccionadas (si están vacías toma el día de hoy)
             DateTime fechaInicio = dpDesde.SelectedDate ?? DateTime.Today;
             DateTime fechaFin = dpHasta.SelectedDate ?? DateTime.Today;
 
@@ -76,7 +76,7 @@ namespace TicketMuseamR
                         cmdDinero.Parameters.AddWithValue("@Inicio", fechaInicio);
                         cmdDinero.Parameters.AddWithValue("@Fin", fechaFin);
                         decimal totalDinero = Convert.ToDecimal(cmdDinero.ExecuteScalar());
-                        lblTotalRecaudado.Text = $"$ {totalDinero:F2}";
+                        lblTotalRecaudado.Text = $"$ {totalDinero:N2}";
                     }
 
                     // 2. BOLETOS EMITIDOS FILTRADOS POR FECHA
@@ -91,7 +91,7 @@ namespace TicketMuseamR
 
                     // 3. ACTUALIZAR EL HISTORIAL DEL DATAGRID CON EL FILTRO
                     string queryHistorial = "SELECT Id_venta, Monto_total, Metodo_pago, Fecha_venta FROM TB_VENTAS " +
-                                             "WHERE Fecha_venta >= @Inicio AND Fecha_venta <= @Fin ORDER BY Id_venta DESC";
+                                           "WHERE Fecha_venta >= @Inicio AND Fecha_venta <= @Fin ORDER BY Id_venta DESC";
                     using (SqlCommand cmdGrid = new SqlCommand(queryHistorial, conexion))
                     {
                         cmdGrid.Parameters.AddWithValue("@Inicio", fechaInicio);
@@ -110,60 +110,72 @@ namespace TicketMuseamR
             }
         }
 
-        // ACCIÓN REAL DEL CORTE DE CAJA
+        // ACCIÓN REAL DEL CORTE DE CAJA (SIEMPRE DEL DÍA DE HOY EXCLUSIVAMENTE)
         private void BtnCorteCaja_Click(object sender, RoutedEventArgs e)
         {
-            DateTime inicioHoy = DateTime.Today;
-            DateTime finHoy = DateTime.Today.AddDays(1).AddSeconds(-1);
+            EjecutarReportePorRango(DateTime.Today, DateTime.Today);
+        }
+
+        // ACCIÓN PARA REPORTES PERSONALIZADOS POR RANGOS DE FECHA
+        private void BtnReporteRango_Click(object sender, RoutedEventArgs e)
+        {
+            DateTime fechaInicio = dpDesde.SelectedDate ?? DateTime.Today;
+            DateTime fechaFin = dpHasta.SelectedDate ?? DateTime.Today;
+
+            EjecutarReportePorRango(fechaInicio, fechaFin);
+        }
+
+        // MÉTODO INTERNO CENTRALIZADO: Procesa los datos y abre la ventana de reportes basada en parámetros
+        private void EjecutarReportePorRango(DateTime inicio, DateTime fin)
+        {
+            // Ajustar el límite superior al último segundo del día seleccionado
+            DateTime finAjustado = fin.Date.AddDays(1).AddSeconds(-1);
+            DateTime inicioAjustado = inicio.Date;
 
             try
             {
                 decimal totalEfectivo = 0;
                 decimal totalTarjeta = 0;
-                int totalBoletosHoy = 0;
+                int totalBoletosRango = 0;
 
                 using (SqlConnection conexion = new SqlConnection(conexionString))
                 {
                     conexion.Open();
 
-                    // Sumar Efectivo de hoy
+                    // Sumar Efectivo en el rango
                     string qEfectivo = "SELECT ISNULL(SUM(Monto_total), 0) FROM TB_VENTAS WHERE Metodo_pago = 'Efectivo' AND Fecha_venta >= @In AND Fecha_venta <= @Fi";
                     using (SqlCommand cmd = new SqlCommand(qEfectivo, conexion))
                     {
-                        cmd.Parameters.AddWithValue("@In", inicioHoy);
-                        cmd.Parameters.AddWithValue("@Fi", finHoy);
+                        cmd.Parameters.AddWithValue("@In", inicioAjustado);
+                        cmd.Parameters.AddWithValue("@Fi", finAjustado);
                         totalEfectivo = Convert.ToDecimal(cmd.ExecuteScalar());
                     }
 
-                    // Sumar Tarjeta de hoy
+                    // Sumar Tarjeta en el rango
                     string qTarjeta = "SELECT ISNULL(SUM(Monto_total), 0) FROM TB_VENTAS WHERE Metodo_pago = 'Tarjeta' AND Fecha_venta >= @In AND Fecha_venta <= @Fi";
                     using (SqlCommand cmd = new SqlCommand(qTarjeta, conexion))
                     {
-                        cmd.Parameters.AddWithValue("@In", inicioHoy);
-                        cmd.Parameters.AddWithValue("@Fi", finHoy);
+                        cmd.Parameters.AddWithValue("@In", inicioAjustado);
+                        cmd.Parameters.AddWithValue("@Fi", finAjustado);
                         totalTarjeta = Convert.ToDecimal(cmd.ExecuteScalar());
                     }
 
-                    // Sumar boletos de hoy
+                    // Sumar boletos en el rango
                     string qBoletos = "SELECT ISNULL(SUM(Cant_bol), 0) FROM TB_VISITANTES WHERE hora_ent >= @In AND hora_ent <= @Fi";
                     using (SqlCommand cmd = new SqlCommand(qBoletos, conexion))
                     {
-                        cmd.Parameters.AddWithValue("@In", inicioHoy);
-                        cmd.Parameters.AddWithValue("@Fi", finHoy);
-                        totalBoletosHoy = Convert.ToInt32(cmd.ExecuteScalar());
+                        cmd.Parameters.AddWithValue("@In", inicioAjustado);
+                        cmd.Parameters.AddWithValue("@Fi", finAjustado);
+                        totalBoletosRango = Convert.ToInt32(cmd.ExecuteScalar());
                     }
                 }
 
                 decimal granTotal = totalEfectivo + totalTarjeta;
 
-                // ¡AQUÍ ESTÁ LA MAGIA!
-                // Creamos la ventana de vista previa pasándole los datos calculados de las consultas
-                ReporteWindow ventanaPDF = new ReporteWindow(totalEfectivo, totalTarjeta, granTotal, totalBoletosHoy);
-
-                // Bloquea el resto de la app hasta que interactúes con el reporte
+                // Crear e invocar la ventana de vista previa enviando la información procesada
+                ReporteWindow ventanaPDF = new ReporteWindow(totalEfectivo, totalTarjeta, granTotal, totalBoletosRango);
                 ventanaPDF.ShowDialog();
 
-                // Una vez cerrada la ventana, actualizamos los paneles por si acaso
                 CargarDatosPorFecha();
             }
             catch (Exception ex)

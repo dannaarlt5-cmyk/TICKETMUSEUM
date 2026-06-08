@@ -28,24 +28,33 @@ namespace TicketMuseamR
             Application.Current.Shutdown();
         }
 
-        // Botón Acceder
+        
         private void LoginButton_Click(object sender, RoutedEventArgs e)
         {
-            // Puedes cambiar "admin" y "123" por los accesos que prefieras
+            
             if (txtUsuario.Text == "admin" && txtContrasena.Password == "123")
             {
                 MessageBox.Show("¡Bienvenido al sistema TicketMuseum!", "Acceso Concedido", MessageBoxButton.OK, MessageBoxImage.Information);
 
-                // Abrir el Dashboard principal
+
                 MainWindow dashboard = new MainWindow();
                 dashboard.Show();
 
-                this.Close(); // Cierra la ventana de Login
+                this.Close(); 
             }
             else
             {
                 MessageBox.Show("Usuario o contraseña incorrectos.", "Error de Autenticación", MessageBoxButton.OK, MessageBoxImage.Error);
             }
+        }
+        private void txtOlvidaste_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            string mensaje = "🔐 Restablecimiento de Credenciales\n\n" +
+                             "Por motivos de seguridad informática y auditoría del Ticket Museum, " +
+                             "las contraseñas de los usuarios deben ser modificadas directamente por el administrador del sistema.\n\n" +
+                             "📞 Comunícate con Soporte Técnico o con el Administrador de Turno para solicitar tu clave temporal.";
+
+            MessageBox.Show(mensaje, "Soporte de Accesos", MessageBoxButton.OK, MessageBoxImage.Information);
         }
     }
 }

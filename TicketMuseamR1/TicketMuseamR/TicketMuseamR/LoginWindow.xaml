@@ -17,7 +17,10 @@
 
         <Border Grid.Column="0" Background="#007ACC">
             <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
-                <Image Source="/Assets/logo_museo.png" Width="120" Height="120" Margin="0,0,0,10"/>
+                <Image Source="pack://application:,,,/Assets/logo_museo.png" 
+       Width="120" 
+       Height="120" 
+       Margin="0,0,0,10"/>
                 <TextBlock Text="Ticket Museum" FontFamily="Segoe UI" FontWeight="Bold" FontSize="18" Foreground="White" HorizontalAlignment="Center"/>
             </StackPanel>
         </Border>
@@ -35,12 +38,13 @@
             <TextBlock Text="Contraseña" FontFamily="Arial" FontSize="12" Foreground="Gray" Margin="0,0,0,2"/>
             <Grid Margin="0,0,0,20">
                 <PasswordBox x:Name="txtContrasena" Background="Transparent" Foreground="White" BorderBrush="Gray" BorderThickness="0,0,0,1" Padding="2" FontSize="14"/>
-                <Button Content="👁" HorizontalAlignment="Right" Background="Transparent" BorderThickness="0" Foreground="#007ACC" VerticalAlignment="Center"/>
             </Grid>
 
             <Button x:Name="LoginButton" Content="Acceder" Background="#222222" Foreground="White" FontFamily="Segoe UI" FontWeight="Bold" Height="35" BorderThickness="1" BorderBrush="#333333" Click="LoginButton_Click"/>
 
-            <TextBlock Text="¿Olvidaste la Contraseña?" FontFamily="Arial" FontSize="11" Foreground="Gray" HorizontalAlignment="Center" Margin="0,15,0,0" Cursor="Hand"/>
-        </StackPanel>
+            <TextBlock Text="¿Olvidaste la Contraseña?" 
+           Foreground="Gray" HorizontalAlignment="Center" 
+           Cursor="Hand" Margin="0,15,0,0"
+           MouseDown="txtOlvidaste_MouseDown"/>        </StackPanel>
     </Grid>
 </Window>

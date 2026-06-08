@@ -22,7 +22,7 @@
             <Grid>
                 <StackPanel Margin="0,40,0,0">
                     <Border CornerRadius="12" Background="#FFFFFF" Width="90" Height="90" Margin="0,0,0,15" Padding="8">
-                        <Image Source="Assets/logo museo.png" Stretch="Uniform"/>
+                        <Image Source="pack://application:,,,/Assets/logo museo.png" Stretch="Uniform"/>
                     </Border>
                     <TextBlock Text="T I C K E T  M U S E U M" Foreground="White" FontWeight="Bold" FontSize="16" HorizontalAlignment="Center" Margin="0,0,0,40"/>
 

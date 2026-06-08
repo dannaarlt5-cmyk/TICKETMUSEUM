@@ -78,6 +78,9 @@
             <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="0,0,0,12">
                 <Button x:Name="BtnCorteCaja" Content="🔒  Hacer Corte de Caja (Hoy)" Background="#8B0000" Foreground="White" 
                         FontWeight="Bold" FontSize="14" Height="35" Width="230" BorderThickness="0" Cursor="Hand" Click="BtnCorteCaja_Click"/>
+
+                <Button x:Name="BtnReporteRango" Content="📊  Generar Reporte del Rango" Background="#005A9E" Foreground="White" 
+                        FontWeight="Bold" FontSize="14" Height="35" Width="230" Margin="15,0,0,0" BorderThickness="0" Cursor="Hand" Click="BtnReporteRango_Click"/>
             </StackPanel>
 
             <Border Grid.Row="1" Background="#FFFFFF" CornerRadius="12" BorderBrush="#E0E0E0" BorderThickness="1">

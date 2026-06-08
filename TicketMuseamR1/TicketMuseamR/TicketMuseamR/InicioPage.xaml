@@ -4,6 +4,7 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       mc:Ignorable="d" 
+      Loaded="Page_Loaded"
       d:DesignHeight="700" d:DesignWidth="1000"
       Title="InicioPage">
 
@@ -31,7 +32,7 @@
                     <Border Grid.Column="0" Background="#8A88F7" CornerRadius="12,0,0,12"/>
                     <StackPanel Grid.Column="1" VerticalAlignment="Center" Margin="30,0,0,0">
                         <TextBlock Text="VENTAS DE HOY" FontWeight="Bold" FontSize="14" Foreground="#777777"/>
-                        <TextBlock x:Name="txtVentasHoy" Text="$ 0.00" FontWeight="Bold" FontSize="32" Foreground="#222222" Margin="0,8,0,0"/>
+                        <TextBlock x:Name="lblVentasHoy" Text="$ 0.00" FontWeight="Bold" FontSize="32" Foreground="#222222" Margin="0,8,0,0"/>
                     </StackPanel>
                 </Grid>
             </Border>
@@ -48,7 +49,7 @@
                     <Border Grid.Column="0" Background="#107C41" CornerRadius="12,0,0,12"/>
                     <StackPanel Grid.Column="1" VerticalAlignment="Center" Margin="30,0,0,0">
                         <TextBlock Text="VISITANTES DE HOY" FontWeight="Bold" FontSize="14" Foreground="#777777"/>
-                        <TextBlock x:Name="txtVisitantesHoy" Text="0" FontWeight="Bold" FontSize="32" Foreground="#222222" Margin="0,8,0,0"/>
+                        <TextBlock x:Name="lblVisitantesHoy" Text="0" FontWeight="Bold" FontSize="32" Foreground="#222222" Margin="0,8,0,0"/>
                     </StackPanel>
                 </Grid>
             </Border>
