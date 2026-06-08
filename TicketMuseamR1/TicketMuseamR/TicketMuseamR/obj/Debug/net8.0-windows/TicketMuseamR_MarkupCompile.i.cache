@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
 C:\ProyectoGit2\TicketMuseamR\TicketMuseamR\App.xaml
-8-2033601472
+10290677811
 
-131414476309
+15-358258511
 213-429468783
-AdminWindow.xaml;BitacoraPage.xaml;BitacoraWindow.xaml;InicioPage.xaml;LoginWindow.xaml;MainWindow.xaml;VentasPage.xaml;VentasWindow.xaml;
+AdminPage.xaml;AdminWindow.xaml;BitacoraPage.xaml;BitacoraWindow.xaml;InicioPage.xaml;LoginWindow.xaml;MainWindow.xaml;ReporteWindow.xaml;VentasPage.xaml;VentasWindow.xaml;
 
-True
+False
 

@@ -38,8 +38,7 @@ namespace TicketMuseamR
 
         private void NavAdmin_Click(object sender, RoutedEventArgs e)
         {
-            // Apunta a la página de administración de Danna cuando esté lista como Page
-            // MainFrame.Navigate(new Uri("AdminPage.xaml", UriKind.Relative));
+            MainFrame.Navigate(new Uri("AdminPage.xaml", UriKind.Relative));
         }
 
         private void Logout_Click(object sender, RoutedEventArgs e)
