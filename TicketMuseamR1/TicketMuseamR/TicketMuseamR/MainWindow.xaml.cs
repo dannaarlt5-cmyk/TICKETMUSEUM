@@ -46,10 +46,9 @@ namespace TicketMuseamR
             LoginWindow login = new LoginWindow();
             login.Show();
 
-            // 2. Buscar la ventana principal que está sosteniendo esta página actual
+           
             Window ventanaPrincipal = Window.GetWindow(this);
 
-            // 3. Si la encontró, cerramos esa ventana contenedora por completo
             if (ventanaPrincipal != null)
             {
                 ventanaPrincipal.Close();
@@ -58,7 +57,7 @@ namespace TicketMuseamR
 
         private void MainFrame_ContentRendered(object sender, EventArgs e)
         {
-            // Evita que guarde historial innecesario en memoria
+          
             MainFrame.NavigationService.RemoveBackEntry();
         }
     }

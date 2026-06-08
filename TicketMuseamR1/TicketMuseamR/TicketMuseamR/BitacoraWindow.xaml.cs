@@ -35,14 +35,14 @@ namespace TicketMuseamR
                 {
                     conexion.Open();
 
-                    // Consulta ordenada por la hora de entrada más reciente
+                    
                     string query = "SELECT Nom_visita AS Nombre, Cant_bol AS CantidadPersonas, hora_ent AS FechaHora FROM TB_VISITANTES ORDER BY hora_ent DESC";
 
                     SqlDataAdapter adaptador = new SqlDataAdapter(query, conexion);
                     DataTable dt = new DataTable();
                     adaptador.Fill(dt);
 
-                    // Enlazar los datos al DataGrid de la interfaz
+                   
                     dgBitacora.ItemsSource = dt.DefaultView;
                 }
                 catch (Exception ex)

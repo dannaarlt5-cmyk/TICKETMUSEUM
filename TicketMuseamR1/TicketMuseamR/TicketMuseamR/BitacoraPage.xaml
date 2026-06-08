@@ -20,9 +20,13 @@
             <TextBlock Text="Historial y registro de accesos en tiempo real de TB_VISITANTES" FontFamily="Arial" FontSize="14" Foreground="#666666" Margin="2,5,0,0"/>
         </StackPanel>
 
-        <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="10,0,0,20">
+        <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="10,0,0,20" VerticalAlignment="Center">
             <Button x:Name="BtnActualizar" Content="🔄  Actualizar Tabla" Background="#005A9E" Foreground="White" 
                     FontWeight="Bold" FontSize="14" Height="35" Width="160" BorderThickness="0" Cursor="Hand" Click="BtnActualizar_Click"/>
+
+            <TextBlock Text="🔍 Buscar Responsable:" VerticalAlignment="Center" FontSize="14" FontWeight="SemiBold" Foreground="#333333" Margin="40,0,10,0"/>
+            <TextBox x:Name="txtBuscar" Width="280" Height="28" VerticalContentAlignment="Center" Padding="5,0" FontSize="14" 
+                     BorderBrush="#D0D7DE" BorderThickness="1" TextChanged="txtBuscar_TextChanged"/>
         </StackPanel>
 
         <Border Grid.Row="2" Background="#FFFFFF" CornerRadius="12" BorderBrush="#E0E0E0" BorderThickness="1" Margin="10,0,10,10">

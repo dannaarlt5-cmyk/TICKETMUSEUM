@@ -23,26 +23,41 @@ namespace TicketMuseamR
     public partial class BitacoraPage : Page
     {
         private string conexionString = @"Server=(local)\SQLEXPRESS;Database=BDMUSEO;Integrated Security=True; TrustServerCertificate=True";
+
         public BitacoraPage()
         {
             InitializeComponent();
         }
+
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
             CargarBitacora();
         }
 
-        // Evento del botón para recargar la tabla manualmente
         private void BtnActualizar_Click(object sender, RoutedEventArgs e)
         {
+            
+            txtBuscar.Text = string.Empty;
             CargarBitacora();
         }
-      
-        // Método principal para conectar a SQL y rellenar el DataGrid
-        private void CargarBitacora()
+
+       
+        private void txtBuscar_TextChanged(object sender, TextChangedEventArgs e)
         {
-            // Consulta SQL para traer los registros de TB_VISITANTES (Ordenados del más reciente al más antiguo)
-            string query = "SELECT Id_visita, Nom_visita, Cant_bol, hora_ent FROM TB_VISITANTES ORDER BY Id_visita DESC";
+            CargarBitacora(txtBuscar.Text.Trim());
+        }
+
+       
+        private void CargarBitacora(string filtroNombre = "")
+        {
+            string query = "SELECT Id_visita, Nom_visita, Cant_bol, hora_ent FROM TB_VISITANTES ";
+
+            if (!string.IsNullOrEmpty(filtroNombre))
+            {
+                query += "WHERE Nom_visita LIKE @Filtro ";
+            }
+
+            query += "ORDER BY Id_visita DESC";
 
             using (SqlConnection conexion = new SqlConnection(conexionString))
             {
@@ -52,13 +67,15 @@ namespace TicketMuseamR
 
                     using (SqlCommand comando = new SqlCommand(query, conexion))
                     {
+                        if (!string.IsNullOrEmpty(filtroNombre))
+                        {
+                            comando.Parameters.AddWithValue("@Filtro", "%" + filtroNombre + "%");
+                        }
+
                         SqlDataAdapter adaptador = new SqlDataAdapter(comando);
                         DataTable tablaVisitantes = new DataTable();
 
-                        // Llenamos el DataTable en memoria con los datos del servidor
                         adaptador.Fill(tablaVisitantes);
-
-                        // Enlazamos la tabla de SQL directamente a tu DataGrid visual
                         dgVisitantes.ItemsSource = tablaVisitantes.DefaultView;
                     }
                 }

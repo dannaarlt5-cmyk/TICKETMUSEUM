@@ -33,7 +33,7 @@ namespace TicketMuseamR
 
         private void CalcularMetricasDeHoy()
         {
-            // Definir el rango exacto para el día de hoy (de 00:00:00 a 23:59:59)
+           
             DateTime inicioHoy = DateTime.Today;
             DateTime finHoy = DateTime.Today.AddDays(1).AddSeconds(-1);
 
@@ -43,7 +43,7 @@ namespace TicketMuseamR
                 {
                     conexion.Open();
 
-                    // 1. CONSULTA PARA LAS VENTAS DE HOY (Suma de montos en TB_VENTAS)
+                   
                     string queryVentas = "SELECT ISNULL(SUM(Monto_total), 0) FROM TB_VENTAS WHERE Fecha_venta >= @In AND Fecha_venta <= @Fi";
                     using (SqlCommand cmdVentas = new SqlCommand(queryVentas, conexion))
                     {
@@ -52,11 +52,11 @@ namespace TicketMuseamR
 
                         decimal ventasHoy = Convert.ToDecimal(cmdVentas.ExecuteScalar());
 
-                        // Modifica el texto en pantalla con formato de moneda
+                    
                         lblVentasHoy.Text = $"$ {ventasHoy:N2}";
                     }
 
-                    // 2. CONSULTA PARA LOS VISITANTES DE HOY (Suma de boletos en TB_VISITANTES)
+                    
                     string queryVisitantes = "SELECT ISNULL(SUM(Cant_bol), 0) FROM TB_VISITANTES WHERE hora_ent >= @In AND hora_ent <= @Fi";
                     using (SqlCommand cmdVisitantes = new SqlCommand(queryVisitantes, conexion))
                     {
@@ -65,7 +65,7 @@ namespace TicketMuseamR
 
                         int visitantesHoy = Convert.ToInt32(cmdVisitantes.ExecuteScalar());
 
-                        // Modifica el contador en pantalla
+                        
                         lblVisitantesHoy.Text = visitantesHoy.ToString();
                     }
                 }
